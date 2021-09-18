@@ -1,24 +1,3 @@
-# Load Balancing 
-
-
-### Load Balancing is dividing requests (load) evenly among multiple (N) servers (horizontally scaled)
-
-### Load Balancers use "Consistent Hashing" to balance load evenly. 
-
-## Consistent Hashing 
-
-Every request has a random ID in range 0 to M-1 
-
-Using hashing algorithm on request r1 we get a value m1 
-    - h(r1) => m1  
-
-Upon dividing m1 by N (number of servers) we get a remainder 
-    - m1%N => S 
-
-The request is assigned to Server with number S. Servers are numbered range from 0 to N. 
-
-IF request ID is uniformly random, we'll have balanced load.  
-
 
 
 Thread = path of execution (diverges when async) - lightweight process with its own stack etc to maintain state 
