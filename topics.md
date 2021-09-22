@@ -4,6 +4,5 @@
     - Caching 
     - Load Balancing (requried in Horizontal scaling)
     - Database Replication 
-    - Database Partitioning 
+    - Database Partitioning and Sharding
 
-2. Monolith vs Mircoservices  
