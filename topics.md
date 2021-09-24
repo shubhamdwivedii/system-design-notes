@@ -18,3 +18,6 @@ Remote Procedure Calls
 
 Object Store 
 
+TOOLS: 
+    draw.io 
+    excalidraw.com
