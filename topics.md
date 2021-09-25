@@ -18,6 +18,11 @@ Remote Procedure Calls
 
 Object Store 
 
+indexing in SQL 
+
+
+
 TOOLS: 
     draw.io 
     excalidraw.com
+    whimsical.com
