@@ -9,6 +9,9 @@
 
 Furthur topics 
 
+DNS CDN Reverse Proxy in more detail.
+
+Load balancer layer 4 and layer 7 
 
 Hashing and Hashing functions Base 62,64, MD5, sha256 
 
@@ -23,6 +26,8 @@ indexing in SQL
 What is RDBMS ??
 
 How denormalization is done (in practise)
+
+Caching algos eg. least recently used LRU
 
 TOOLS: 
     draw.io 
