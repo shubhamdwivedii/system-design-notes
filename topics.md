@@ -29,6 +29,12 @@ How denormalization is done (in practise)
 
 Caching algos eg. least recently used LRU
 
+
+Some term definiation such as "Latency" and "Consitency"
+
+
+cache invalidation.
+
 TOOLS: 
     draw.io 
     excalidraw.com
