@@ -9,6 +9,8 @@
 
 Furthur topics 
 
+Horizontal vs Vertical in More Detail + Tradeoffs. 
+
 DNS CDN Reverse Proxy in more detail.
 
 Load balancer layer 4 and layer 7 
@@ -21,9 +23,9 @@ Remote Procedure Calls
 
 Object Store 
 
-indexing in SQL 
+SQL in general. indexing in SQL 
 
-What is RDBMS ??
+What is RDBMS ?? What is relational data ? (what is indexing?)
 
 How denormalization is done (in practise)
 
@@ -34,6 +36,17 @@ Some term definiation such as "Latency" and "Consitency"
 
 
 cache invalidation.
+
+redundancy and availability (highly available?)
+
+Examples of each:   
+    - Load Balancer - Amazon ELB, HAProxy 
+    - CDN - CloudFront 
+    - Cache - Redis 
+    - Message Queues - RabbitMQ
+    - MemoryCache - AWS ElastiCache, Memcached ?
+
+Stateless Autoscaling
 
 
 // That interview topics 
@@ -101,7 +114,14 @@ Scheduling (in Go)
 
 book my show - per day traffic - max requests
 
+// Other Topics 
 
+Object Store 
+RDBMS 
+SQL vs NoSQL 
+Reverse Proxy 
+SQL indexing 
+Hashing algos - MD5, Base62, Base64, SHA256
 
 
 TOOLS: 
