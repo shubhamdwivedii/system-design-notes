@@ -35,6 +35,75 @@ Some term definiation such as "Latency" and "Consitency"
 
 cache invalidation.
 
+
+// That interview topics 
+
+CAP Theorem
+
+caching 
+
+noSQL types 
+CDN  
+reverse proxy 
+
+what is hashing 
+hashing vs encryption 
+hashing algorithms 
+encryption algorithms 
+asymmetric vs symetric encryption 
+
+concurrency vs parallelism 
+deadlock 
+
+channels 
+buffered channels - what happens when overflow 
+
+mutex ?
+
+how to limit number of goroutines (max goroutines)
+
+rate limiter 1000 requests 
+
+is GO and OOP why ?
+
+Slices vs Array 
+
+String Builder - effiencient ways to append a string
+
+Why Golang ?
+
+how throw error in Golang ?
+
+methods vs functions in Go 
+
+Golang types 
+
+What are pointers ? 
+
+What is Panic, what happens when Panic ?
+
+SOLID Principle 
+
+// DEEPAK TOPICS 
+
+reverse proxy 
+nginx 
+load balancer - layer 4, layer 7 
+DNS 
+Constitency - strong, weak, eventual 
+Availability - master - slave 
+http 2 vs 1 (https)
+SSL/TSL 
+Asymmetric encryption (private/public keys)
+
+Context (Go)
+Scheduling (in Go)
+
+book my show - per day traffic - max requests
+
+
+
+
 TOOLS: 
     draw.io 
     excalidraw.com
