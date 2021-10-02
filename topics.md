@@ -19,13 +19,18 @@ Hashing and Hashing functions Base 62,64, MD5, sha256
 
 Rate Limiter 
 
-Remote Procedure Calls 
+
+Remote Procedure Calls (in more detail RPC (gRPC))
+
+SaaS PaaS etc. 
 
 Object Store 
 
 SQL in general. indexing in SQL 
 
 What is RDBMS ?? What is relational data ? (what is indexing?)
+
+SQL vs NoSQL tradeoffs why and when to use which ?
 
 How denormalization is done (in practise)
 
