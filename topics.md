@@ -88,7 +88,9 @@ Slices vs Array
 
 String Builder - effiencient ways to append a string
 
-Why Golang ?
+Why Golang ? Why go better than node python java etc. ??
+
+Golang Utils (go fmt, go test, go list, go build, go run etc)
 
 how throw error in Golang ?
 
