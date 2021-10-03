@@ -53,6 +53,8 @@ Examples of each:
 
 Stateless Autoscaling
 
+WebSockets and Push Notifications
+
 
 // That interview topics 
 
