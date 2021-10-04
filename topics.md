@@ -106,6 +106,8 @@ What is Panic, what happens when Panic ?
 
 SOLID Principle 
 
+ACID Principle
+
 // DEEPAK TOPICS 
 
 reverse proxy 
