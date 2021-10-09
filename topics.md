@@ -151,6 +151,15 @@ SQL Indexes how work and b trees
 
 stack vs heap ? why heap is slower. 
 
+HOW SSL works and Difference between SSL and TSL 
+
+WHen to use a Distributed database (what are some distributed databases (eg. Mongodb supports distributed))
+
+ACID in detail 
+What to do when two transactions happen simultaneously 
+Optimistic Lock vs Pessimistic Lock 
+Check-and-write 
+
 TOOLS: 
     draw.io 
     excalidraw.com
