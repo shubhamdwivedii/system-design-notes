@@ -135,6 +135,22 @@ SQL indexing
 Hashing algos - MD5, Base62, Base64, SHA256
 
 
+DB Schema Design 
+Foreign Key 
+Shipping Service/Movie Database Design 
+SQL Unions etc. 
+
+// More interview topics 
+
+How OAuth works 
+How JWT works and the benefits 
+
+process vs thread 
+
+SQL Indexes how work and b trees 
+
+stack vs heap ? why heap is slower. 
+
 TOOLS: 
     draw.io 
     excalidraw.com
