@@ -82,3 +82,76 @@ Hence whenever a **page fault** occurs these steps are followed by the operating
 **Paging happens whenever a page fault occurs** and a free page cannot be used for allocation purpose accounting to reason that pages are not available or the number of free pages is lower than required pages.
 
 There are many different page replacement algorithms. We evaluate an algorithm by running it on a particular **string of memory reference** and computing the number of page faults.
+
+### Reference String
+
+The **string of memory references** is called **reference string**. 
+
+Reference strings a regenerated artificially or by tracing a given system and recording the address of each memory reference.
+
+The latter choide produces a large number of data, where we note two things: 
+
+1. For a given page size, we need to consider only the page number, not the entire address. 
+
+2. If we have a reference to a page **p**, then any immediately following references to page **p** will never cause a page fault. 
+    - Page p will be in memory after the first reference; the immediately following references will not fault.
+
+    - For example, consider the following sequence of addresses − 123,215,600,1234,76,96
+
+    - If page size is 100, then the reference string is 1,2,6,12,0,0
+
+
+## Page Replacement Algorithms: 
+
+### First In First Out (FIFO) Algorithm: 
+
+1. Oldest page in main memory is the one which will be selected for replacement. 
+
+2. Easy to implement, keep a list, **replace pages from the Tail** and **add new pages at the Head**.
+
+![virtual3](./virtual_memory_fifo.jpg)
+
+
+### Optimal Page Algorithm: 
+
+1. An optimal page-replacement algorithm has the **lowest page-fault rate of all algorithms**. An optimal page-replacement algorithm exists, and has been called OPT or MIN.
+
+2. Replace the page that will not be used for the longest period of time. **Use the time when a page is to be used**.
+
+![virtual4](./virtual_memory_opr.jpg)
+
+
+### Least Recently Used (LRU) Algorithm: 
+
+1. Page which has **not been used for the longest time in main memory is the one which will be selected for replacement**.
+
+2. Easy to implement, **keep a list, replace pages by looking back into time**.
+
+
+![virtual5](./virtual_memory_lru.jpg)
+
+
+### Page Buffering Algorithm: 
+
+1. To get a process start quickly, **keep a pool of free frames**.
+
+2. On page fault, select a page to be replaced.
+
+3. Write the new page in the frame of free pool, mark the page table and restart the process.
+
+4. Now write the dirty page out of disk and place the frame holding replaced page in free pool.
+
+
+### Least Frequently Used (LFU) Algorithm: 
+
+1. The **page with the smallest count is the one which will be selected for replacement**.
+
+2. This algorithm suffers from the **situation in which a page is used heavily during the initial phase of a process**, but then is never used again.
+
+
+### Most Frequently Used (MFU) Algorithm: 
+
+1. This algorithm is based on the argument that **the page with the smallest count was probably just brought in and has yet to be used**.
+
+
+_See More About Paging_
