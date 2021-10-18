@@ -160,6 +160,9 @@ What to do when two transactions happen simultaneously
 Optimistic Lock vs Pessimistic Lock 
 Check-and-write 
 
+
+DIfference between INSERT UPSERT etc. 
+
 TOOLS: 
     draw.io 
     excalidraw.com
