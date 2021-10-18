@@ -22,9 +22,9 @@ Cli Pay Later Assignment
 **Comp Science Fundamendals:**
 
 1. What happens when we click on www.google.com (DONE) 
-2. Virtual Memory 
+2. Virtual Memory (DONE) 
 3. Paging (related to Virtual Memory
-)
+) (DONE)
 4. Why Go better than Java 
 5. What happens when we run a program, example main.go
 6. Content in HTTP object 
