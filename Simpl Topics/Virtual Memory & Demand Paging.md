@@ -154,4 +154,8 @@ The latter choide produces a large number of data, where we note two things:
 1. This algorithm is based on the argument that **the page with the smallest count was probably just brought in and has yet to be used**.
 
 
+### First In First Out (FIFO) Algorithm 
+
+1. First page that was added in will be the first one to be replaced and so on. 
+
 _See More About Paging_

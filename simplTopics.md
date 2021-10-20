@@ -25,7 +25,8 @@ Cli Pay Later Assignment
 2. Virtual Memory (DONE) 
 3. Paging (related to Virtual Memory
 ) (DONE)
-4. Why Go better than Java 
+3. Page replacement policy. 
+4. Why Go better than Java (DONE)
 5. What happens when we run a program, example main.go
 6. Content in HTTP object 
 7. CDN 
@@ -36,7 +37,7 @@ Cli Pay Later Assignment
 12. How does TLS/SSL certificates work 
 13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing 
 14. How does token refresh work ? 
-15. Defer panic recover. 
+15. Defer panic recover in go. 
 16. L1 & L2 cache
 17. How Kafka messaging works ? 
 
