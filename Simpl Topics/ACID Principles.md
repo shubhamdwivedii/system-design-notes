@@ -164,7 +164,7 @@ To deal with this **Read-Skew** anomaly, **Repeatable-Read** and **Snapshot Isol
 
 **Snapshot Isolation is more common now-a-days**. Its implemented as **multi-version concurrency control (MVCC)**. 
 
-![acid8](./acid_isolation5.png)\
+![acid8](./acid_isolation5.png)
 
 In many cases when databases say **Repeatable-Read** they **actually mean** **Snapshot-Isolation**. 
 
@@ -183,13 +183,29 @@ That's where the **multi-version (of MVCC)** comes in, that means **the database
 
 **Read Repeat** has a **lots of locks**, **reads have to be repeated I guess** 
 
-There is STILL one **anomality** possible **even with Read-Repeaded AND Snapshot Isolation**, **Write-Skew**. 
+Default isolation level in **MySQL** is **Read-Repeat**.
+In **PostGreSQL** it is **Read-Commited**.
 
+There is STILL one **anomality** possible **even with Read-Repeaded AND Snapshot Isolation**, **Write-Skew**. 
 
 ## Write Skew: 
 
+Imagine an **Ambulance Service** where the **invariant** is the **there must always be _ONE_ doctor on-call**. If there are no docters on-call the ambulance cannot go (without a docter).
 
+![acid9](./acid_isolation6.png)
 
+If the doctors use above transaction to **go off-call** (break), the transaction will check how many doctors are **on-call**, if its at-least 2, then **its safe for the doctor to go off-call**.   
 
-Default isolation level in **MySQL** is **Read-Repeat**.
-In **PostGreSQL** it is **Read-Commited**.
+With **Snapshot Isolation** or **Read-Repeated**, an anomaly can occur where there are **no doctors on-call**, if the **last two doctors start a transaction at almost same time** and our **invariant has been violated**. 
+
+![acid10](./acid_isolation7.png)
+
+This type of anomaly is known as **Write Skew**. 
+
+![acid11](./acid_isolation8.png)
+
+In **concurrent executions of transactions**, by the time the transaction **commits**, the **premise of the decision** that this transaction made (**based on some read**) **may no longer be true**.
+
+This would be a **serializability violation**. 
+
+**Race Condition**: When **two concurrent transacations are working on same data** (even if different **snapshots**)
