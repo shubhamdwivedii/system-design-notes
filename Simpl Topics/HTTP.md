@@ -1,5 +1,7 @@
 ## HTTP (Hyper Text Transfer Protocol)
 
+**HTTP** is a **set of rules** that **runs on top of the TCP/IP** suite of protocols and **defines how files are to be transferred between clients and servers** on the world wide web.
+
 **HTTP** is a **Protocol** for **fetching resources** such as HTML documents. 
 
 It is the foundation of any data exchange on the Web and it is a **client-server protocol**, which means **requests** are initiated by the **recipient**, usually the Web browser. 
@@ -134,3 +136,61 @@ There are four types of HTTP message headers:
 3. **Server Response-header**: These header fields have applicability only for response messages.
 
 4. **Entity-header**: These header fields define meta information about the entity-body or, if no body is present, about the resource identified by the request.
+
+
+Headers can be grouped according to their contexts:
+
+1. **Request headers** contain more information about the resource to be fetched, or about the client requesting the resource.
+
+2. **Response headers** hold additional information about the response, like its location or about the server providing it.
+
+3. **Representation headers** contain information about the body of the resource, like its MIME type, or encoding/compression applied.
+
+4. **Payload headers** contain representation-independent information about payload data, including content length and the encoding used for transport.
+
+
+## HTTP2 (Introduced in 2015 (based on Google's SPDY from 2010)) - Key Features 
+
+1. It **introduces concept of a server push**, where the server anticipates the resources that will be requried by the client and pushes them prior to the client making requests. 
+
+    The client retains authority to deny server push.
+    In most cases, server push improves efficiency by a lot. 
+
+2. **Introduces the concept of multiplexing** that interleaves the request and responses without head-of-line blocking and does so over **a single TCP connection**. 
+
+3. HTTP2 is a **binary protocol** ie: only binay commands in form of **0s and 1s** are transmitted over the wire. 
+
+    The binary framing layer divides the messages into frames that are segregated based on their type - **Data or Header**
+
+    This features **increases security, compression and multiplexing**.
+
+
+## HTTP1 vs HTTP2 
+
+- HTTP1: For **every TCP connection, there is only one request and one response**.
+- HTTP2: **Uses multiplexing**, where over a **single TCP connection** resources to be delivered are **interleaved** and **arrive at the client almost at the same time**. 
+
+
+- HTTP1: Uses **basic authentication scheme** which is unsafe since **username and passwords are transmitted in clear text or base64 encoded**. 
+- HTTP2: Better equipped to deal with them due to new **TLS features** like connection error of type Inadequate_Security
+
+
+- HTTP1: Provides support for **caching via the If-Modified-Since header**.
+- HTTP2: With the **server push feature** if the client finds the **resources are already present in the cache**, it can c**ancel the pushed stream**.
+
+- HTTP1: **Is Textual (usually base64)**
+- HTTP2: **Is Binary (0s and 1s)**
+
+
+## HTTP vs HTTPS 
+
+1. **HTTP is unsecured** while **HTTPS is secured**. 
+2. **HTTP sends data over port 80** while **HTTPS uses port 443**. 
+3. **HTTP operates at application layer**, while **HTTPS operates at transport layer**
+4. **No SSL certificates are required for HTTP**, with **HTTPS requires SSL certificate signed by a CA**.
+5. **HTTP doesn't require domain validation**, where as **HTTPS requires at least domain validation** and certain certificates even require legal document validation. 
+6. **No encryption in HTTP**, with **HTTPS the data is encrypted before sending**.  
+
+_That should be enough_
+
+_See SSL/TLS Next_

@@ -11,8 +11,8 @@ Cli Pay Later Assignment
 **DS Algo:**
 
 1. Given array of positive integers, find the maximum number that can be formed. (done)
-2. Maximum number of envelopes that can be fitted under one another. 
-3. 3Jump
+2. Maximum number of envelopes that can be fitted under one another. (done)
+3. 3Jump (done)
 
 **Additional Problems:** 
 1. Modelling a calls to perform rest calls (GET/POST etc) 
@@ -25,21 +25,22 @@ Cli Pay Later Assignment
 2. Virtual Memory (DONE) 
 3. Paging (related to Virtual Memory
 ) (DONE)
-3. Page replacement policy. 
+3. Page replacement policy. (DONE)
 4. Why Go better than Java (DONE)
-5. What happens when we run a program, example main.go
-6. Content in HTTP object 
+5. What happens when we run a program, example main.go 
+6. Content in HTTP object (???)
 7. CDN 
-8. HTTP version 1/2 
-9. Types of headers in HTTP 
-10. Process vs Thread vs Goroutines 
-11. Difference between HTTP and HTTPS 
+8. HTTP version 1/2 (DONE)
+9. Types of headers in HTTP (DONE) 
+10. Process vs Thread vs Goroutines (DONE)
+11. Difference between HTTP and HTTPS (DONE)
 12. How does TLS/SSL certificates work 
 13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing 
 14. How does token refresh work ? 
-15. Defer panic recover in go. 
+15. Defer panic recover in go. (DONE)
 16. L1 & L2 cache
 17. How Kafka messaging works ? 
+18. Context in Go. 
 
 
 **Project Discussion:** 
@@ -80,3 +81,7 @@ Why Join Simpl
 1. TCP (and TCP connections)
 
 2. Top OS topics
+
+3. Web Sockets
+
+4. OSI Model
