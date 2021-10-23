@@ -23,8 +23,7 @@ Cli Pay Later Assignment
 
 1. What happens when we click on www.google.com (DONE) 
 2. Virtual Memory (DONE) 
-3. Paging (related to Virtual Memory
-) (DONE)
+3. Paging (related to Virtual Memory) (DONE)
 3. Page replacement policy. (DONE)
 4. Why Go better than Java (DONE)
 5. What happens when we run a program, example main.go 
@@ -34,13 +33,13 @@ Cli Pay Later Assignment
 9. Types of headers in HTTP (DONE) 
 10. Process vs Thread vs Goroutines (DONE)
 11. Difference between HTTP and HTTPS (DONE)
-12. How does TLS/SSL certificates work 
-13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing 
+12. How does TLS/SSL certificates work (DONE)
+13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing (DONE)
 14. How does token refresh work ? 
 15. Defer panic recover in go. (DONE)
-16. L1 & L2 cache
+16. L1 & L2 cache 
 17. How Kafka messaging works ? 
-18. Context in Go. 
+18. Context in Go. (?? DONE)
 
 
 **Project Discussion:** 
@@ -85,3 +84,7 @@ Why Join Simpl
 3. Web Sockets
 
 4. OSI Model
+
+5. SOLID (DONE)
+
+6. Every Possible Topic From Resume (Like JWTs, Refresh Token, OAuth)

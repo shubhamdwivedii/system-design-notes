@@ -14,7 +14,7 @@ Example: If **debit** is made successfully from one account, the corresponding *
 
 **Data is in a consistent state when a transaction starts and when it ends.**
 
-Example: **total value of funds** in both acccounts **is the same** at the **start** and **end** of each transaction. 
+Example: **total value of funds** in both accounts **is the same** at the **start** and **end** of each transaction. 
 
 ### Isolation: 
 
