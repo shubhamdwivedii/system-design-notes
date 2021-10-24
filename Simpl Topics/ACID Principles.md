@@ -209,3 +209,62 @@ In **concurrent executions of transactions**, by the time the transaction **comm
 This would be a **serializability violation**. 
 
 **Race Condition**: When **two concurrent transacations are working on same data** (even if different **snapshots**)
+
+Solution to **Write-Skew** anomality is implementing **Serializible Isolation**.
+
+
+## Serializable Isolation: 
+
+![acidserial](./acid_isolation12.png)
+
+### 1. Two Phase Locking (2PL):
+
+For 30 years the only solution was **use lots of locking.**
+
+2-Phase Locking is also knowns as **Pessimistic Locking**. 
+
+When you **read** something, you need to take a **shared lock** on all of the things (rows) you are **reading**. 
+
+This **shared lock** only locks other transactions from **writing** the rows. They can **still read** those rows. 
+
+![acid12](./acid_isolation9.png)
+
+A problem here is suppose a transaction (analytics) needs to **read all the rows** in db. This would need a **shared lock on entire db**. 
+
+
+### 2. Make Transactions Serial (H-Store/VaultDB):
+
+You can take **all the transactions** and make them literally **seriable** (**one after another**).
+
+This only works well if each transactions are **really fast**. 
+
+![acid13](./acid_isolation10.png)
+
+This is used in **VaultDB**. 
+
+
+### 3. Detect Conflicts and Abort (Serializable Snapshot Isolation):
+
+This is based on **Snapshot Isolation** with **additional checks** to make it **serializable**. 
+
+Also known as **Optimistic Locking**. 
+
+This is used by **PostgreSQL** (Since version 9.1).
+
+You take **locks** when you **read** or **write** something (in a **transaction**). But those **locks** **DON'T actually block** other transactions from reading or writing. 
+
+These **locks** just **record** everything on a **ledger**.
+
+If any other transactions **writes** something on the same data (our transaction is working on), the **lock** will note that write on the **ledger**. 
+
+Then **at the end of transaction**, an **analysis process happens** where it looks at the **ledger** to see if there were any **conflicts** and decide to **abort** or **commit**.
+
+![acid14](./acid_isolation11.png)
+
+
+This is **Optimistic** because you assume the **conflicts rate** isn't going to be too high. 
+
+If **contention** is **not too high** then this could work very well. 
+
+
+_Add here Consensus for microservices later_
