@@ -60,10 +60,15 @@ Cli Pay Later Assignment
 **System Design:** 
 
 1. Design Shipment and Logistics System
-2. Design BookMyShow 
+2. Design BookMyShow/Fandango
 3. Design Uber 
 4. Design Swiggy/Zomato 
 5. Design IMDB site
+6. Twitter/Facebook/Instagram 
+7. PasteBin/bit.ly 
+8. Twitter-Search 
+9. Web Crawler 
+10. Youtube
 
 
 ## Round 5 
@@ -88,3 +93,5 @@ Why Join Simpl
 5. SOLID (DONE)
 
 6. Every Possible Topic From Resume (Like JWTs, Refresh Token, OAuth)
+
+7. Insertion and Selection Sort 

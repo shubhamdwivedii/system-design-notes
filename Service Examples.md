@@ -5,3 +5,8 @@
 **Reverse Proxy** - **HAProxy**
 
 **Distributed NoSQL** - **Apache Cassandra**, **AWS DynamoDB**
+
+**Distributed SQL (NewSQL)** - **PostgreSQL**, **AWS RDB**
+
+**Recommendations (ML)** - **Hadoop and Spark Streaming with ML**
+
