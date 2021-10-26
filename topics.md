@@ -15,10 +15,7 @@ DNS CDN Reverse Proxy in more detail.
 
 Load balancer layer 4 and layer 7 
 
-Hashing and Hashing functions Base 62,64, MD5, sha256 
-
 Rate Limiter 
-
 
 Remote Procedure Calls (in more detail RPC (gRPC))
 
@@ -36,9 +33,7 @@ How denormalization is done (in practise)
 
 Caching algos eg. least recently used LRU
 
-
 Some term definiation such as "Latency" and "Consitency"
-
 
 cache invalidation.
 

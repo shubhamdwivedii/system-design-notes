@@ -177,11 +177,13 @@ So even if **other writes** are **subsequently commited**, that (above) **read t
 That's where the **multi-version (of MVCC)** comes in, that means **the database internally keep several different versions for a data item** and it presents the transaction that's appropriate to it (transaction).
 
 
-### Read Repeated:
+### Read Repeated (or Repeatable-Read):
 
 **Read Repeat** was used on older systems like **R** or **classic SQL**. 
 
-**Read Repeat** has a **lots of locks**, **reads have to be repeated I guess** 
+**Repeatable Read** is similar to **Snapshot Isolation**, just that instead of **snapshots of entire db**, only the **rows** that are read in the transaction are maintained in a **copy** for **future reads**. 
+
+**Repeatable read** guarantees only that if **multiple queries within the transaction read the same rows**, then **they will see the same data each time**. (So, **different rows might get snapshotted at different times**, depending on when the transaction first retrieves them. And if new rows are inserted, a later query might detect them.)
 
 Default isolation level in **MySQL** is **Read-Repeat**.
 In **PostGreSQL** it is **Read-Commited**.

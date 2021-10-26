@@ -17,7 +17,7 @@ Cli Pay Later Assignment
 **Additional Problems:** 
 1. Modelling a calls to perform rest calls (GET/POST etc) 
 2. SQL Queries Multiple Table Joins 
-3. Rate Limiter Implementation
+3. Rate Limiter Implementation 
 
 **Comp Science Fundamendals:**
 
@@ -32,6 +32,7 @@ Cli Pay Later Assignment
 8. HTTP version 1/2 (DONE)
 9. Types of headers in HTTP (DONE) 
 10. Process vs Thread vs Goroutines (DONE)
+11. Generics and Type embedding in Go ???
 11. Difference between HTTP and HTTPS (DONE)
 12. How does TLS/SSL certificates work (DONE)
 13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing (DONE)
@@ -59,8 +60,8 @@ Cli Pay Later Assignment
 
 **System Design:** 
 
-1. Design Shipment and Logistics System
-2. Design BookMyShow/Fandango
+1. Design Shipment and Logistics System (LLD)
+2. Design BookMyShow/Fandango (HLD/LLD)
 3. Design Uber 
 4. Design Swiggy/Zomato 
 5. Design IMDB site
