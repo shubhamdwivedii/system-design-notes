@@ -190,3 +190,36 @@ ON orders.vendor_id = vendors.vendor_id;
 ``` 
 
 ![sql6](./sql_multi.png)
+
+
+## Creating Indexes on SQL Tables: 
+
+**Creates an index on a table. Duplicate values are allowed:**
+```sql 
+CREATE INDEX index_name
+ON table_name (column1, column2, ...)
+```
+
+**Creates a _unique_ index on a table. Duplicate values are _not_ allowed:**
+```sql 
+CREATE UNIQUE INDEX index_name 
+ON table_name (column1, column2, ...)
+```
+
+Example: 
+
+```sql
+CREATE INDEX idx_lastname
+ON Persons (LastName);
+```
+
+```sql 
+CREATE INDEX idx_pname 
+ON Persons (LastName, FirstName);
+```
+
+**Deleting an Index** 
+```sql 
+ALTER TABLE Persons
+DROP INDEX idx_pname; 
+```
