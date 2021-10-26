@@ -176,3 +176,17 @@ SELECT * FROM orders
 RIGHT JOIN customers ON customers.customer_id = orders.customer_id
 ```
 
+## Multiple Joins: 
+
+You can perform **multiple levels of JOINs** 
+
+```sql 
+SELECT customers.customer_id, orders.order_id, orders.order_date, vendors.name 
+FROM customers 
+INNER JOIN orders 
+ON customers.customer_id = orders.customer_id 
+INNER JOIN vendors 
+ON orders.vendor_id = vendors.vendor_id; 
+``` 
+
+![sql6](./sql_multi.png)
