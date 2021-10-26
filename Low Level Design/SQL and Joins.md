@@ -223,3 +223,57 @@ ON Persons (LastName, FirstName);
 ALTER TABLE Persons
 DROP INDEX idx_pname; 
 ```
+
+
+## Group By 
+
+The SQL **GROUP BY** clause is used in collaboration with the SELECT statement to **arrange identical data into groups**. 
+
+This **GROUP BY clause follows the WHERE clause** in a SELECT statement and **precedes the ORDER BY** clause.
+
+```sql 
+SELECT NAME, SUM(SALARY) FROM CUSTOMERS
+GROUP BY NAME;
+```
+
+![sql7](./sql_groupby.png)
+
+**GROUP BY** simply groups results by **unique elements of a column**.
+
+![sql7](./sql_groupby2.png)
+
+
+## Multi-Table Query 
+
+**Instead of using JOINS**, you can also use **aliases** for multi-table queries: 
+
+```sql 
+select c.company_code, c.founder, 
+    count(distinct l.lead_manager_code), count(distinct s.senior_manager_code), 
+    count(distinct m.manager_code),count(distinct e.employee_code) 
+from Company c, Lead_Manager l, Senior_Manager s, Manager m, Employee e 
+where c.company_code = l.company_code 
+    and l.lead_manager_code=s.lead_manager_code 
+    and s.senior_manager_code=m.senior_manager_code 
+    and m.manager_code=e.manager_code 
+group by c.company_code order by c.company_code;
+```
+
+This has following alternative with **INNER JOIN**: 
+
+```sql 
+select c.company_code, 
+    c.founder, 
+    count(distinct e.lead_manager_code), 
+    count(distinct e.senior_manager_code), 
+    count(distinct e.manager_code), 
+    count(distinct e.employee_code)
+from company c
+    inner join employee e on e.company_code = c.company_code
+group by c.company_code,c.founder
+order by c.company_code;
+```
+
+![sql8](./sql_multi_table.png)
+
+**_This also illustrates what happens when you forget GROUP BY._**
