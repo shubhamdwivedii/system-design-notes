@@ -11,7 +11,7 @@ The referenced column(s) in the referenced table must be under a **unique** cons
 
 On inserting a new row into the referencing table, the **relational database management system** (**RDBMS**) **checks if the entered key value _exists_ in the referenced table**. If not, no insert is possible.
 
-![sql1](./sql_fk.png)
+![sql1](./sql-fk.png)
 
 
 A referential integrity constraint is also known as **foreign key constraint**.
@@ -88,7 +88,7 @@ WHERE Customers.CustomerID = Orders.CustomerID;
 
 4. **FULL (OUTER) JOIN**: Returns all records when there is a match in either left or right table. 
 
-![sql2](./sql_joins.png)
+![sql2](./sql-joins.png)
 
 
 ### Inner Join: 
@@ -107,7 +107,7 @@ ORDER BY customers.customer_id;
 
 If there are multiple rows with intersection, resulting table would have every intersection. 
 
-![sql3](./sql_inner.png)
+![sql3](./sql-inner.png)
 
 _NOTE: user3 is missing in result set._
 
@@ -128,7 +128,7 @@ ORDER BY customers.customer_id;
 
 In some databases, the **OUTER** keyword is omitted and written simply as LEFT JOIN.
 
-![sql4](./sql_left.png)
+![sql4](./sql-left.png)
 
 _NOTE: user3 IS present in result set._
 
@@ -149,7 +149,7 @@ ORDER BY customers.customer_id;
 
 _I added a transaction with non existing user **tempu** just for example_
 
-![sql5](./sql_right.png)
+![sql5](./sql-right.png)
 
 _NOTE: tempu transactions is included even when there is no user on **left** table._
 
@@ -189,7 +189,7 @@ INNER JOIN vendors
 ON orders.vendor_id = vendors.vendor_id; 
 ``` 
 
-![sql6](./sql_multi.png)
+![sql6](./sql-multi.png)
 
 
 ## Creating Indexes on SQL Tables: 
@@ -236,11 +236,11 @@ SELECT NAME, SUM(SALARY) FROM CUSTOMERS
 GROUP BY NAME;
 ```
 
-![sql7](./sql_groupby.png)
+![sql7](./sql-groupby.png)
 
 **GROUP BY** simply groups results by **unique elements of a column**.
 
-![sql7](./sql_groupby2.png)
+![sql7](./sql-groupby2.png)
 
 
 ## Multi-Table Query 
@@ -274,6 +274,6 @@ group by c.company_code,c.founder
 order by c.company_code;
 ```
 
-![sql8](./sql_multi_table.png)
+![sql8](./sql-multi_table.png)
 
 **_This also illustrates what happens when you forget GROUP BY._**
