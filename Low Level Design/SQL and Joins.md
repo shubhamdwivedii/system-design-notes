@@ -277,3 +277,34 @@ order by c.company_code;
 ![sql8](./sql-multi_table.png)
 
 **_This also illustrates what happens when you forget GROUP BY._**
+
+
+## SQL Sub-Queries 
+
+A **Subquery** or **Inner query** or a **Nested query** is **a query within another SQL query and embedded within the WHERE clause**
+
+```sql 
+SELECT * FROM CUSTOMERS 
+WHERE ID IN (SELECT ID FROM CUSTOMERS WHERE SALARY > 4500);
+```
+
+_NOTE: Syntax > WHERE **KEY** IN (SELECT **KEY** FROM TABLE WHERE CONDITION)_
+
+
+**You** can also treat **nested query** as a **Table** 
+
+```sql
+SELECT q1.DonorID, q1.LastName, SUM(q2.Amount) AS SumOFAmount 
+FROM (
+    SELECT DonorID, LastName 
+    FROM tblDonors
+    WHERE LastName LIKE "Thomp*" 
+) AS q1 
+INNER JOIN (
+    SELECT DonorID, Amount 
+    FROM tblDonations 
+    WHERE Amount < 5
+) AS q2 
+ON q1.DonorID = q2.DonorID 
+GROUP BY q1.DonorID, q1.LastName
+```
