@@ -196,4 +196,8 @@ Headers can be grouped according to their contexts:
 
 _That should be enough_
 
+**CORS** (**Cross-Origin Resource Sharing**) is a system, consisting of transmitting HTTP headers, **that determines whether browsers block frontend JavaScript code from accessing responses for cross-origin requests**.
+
+The same-origin security policy forbids cross-origin access to resources. But CORS gives web servers the ability to say they want to opt into allowing cross-origin access to their resources.
+
 _See SSL/TLS Next_

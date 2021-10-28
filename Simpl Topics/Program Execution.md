@@ -78,6 +78,10 @@ Notice that steps **3 – 7** make up a **cycle**, the **instruction execution c
 
 ## How Are Instructions Loaded Into Memory ? 
 
+**A Stack** and **A Heap Memory Area** is allocated to the Process, once its loaded. 
+
+**Instructions** go into the **Stack**, **Heap** is managed by either the **Garbage Collection** or **freed** by **Destructure Instructions**.
+
 _See Paging_ 
 
 
