@@ -59,3 +59,12 @@ Every **URL** on the internet has a unique **IP** address which is **of the comp
 8. Browser may send more requests for additional objects embedded in the **HTML** like images, css, javascript. 
 
 8. Finally Done....
+
+
+### HTTP Verbs: 
+
+- **GET** - Read / Get
+- **POST** - Create New / Add
+- **PUT** - Update / Replace 
+- **PATCH** - Update / Modify 
+- **Delete** - Delete 
