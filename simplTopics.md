@@ -22,13 +22,14 @@ Cli Pay Later Assignment
 **Comp Science Fundamendals:**
 
 1. What happens when we click on www.google.com (DONE) (YES)
-2. Virtual Memory (DONE) 
-3. Paging (related to Virtual Memory) (DONE)
-3. Page replacement policy. (DONE)
-4. Why Go better than Java (DONE)
-5. What happens when we run a program, example main.go 
-6. Content in HTTP object (???)
-7. CDN 
+2. Virtual Memory (DONE) (YES)
+3. Paging (related to Virtual Memory) (DONE) (YES)
+3. Page replacement policy. (DONE) (YES)
+4. Why Go better than Java (DONE) (YES)
+4. Go Garbage Collection (DONE) (YES)
+5. What happens when we run a program, example main.go (+ InterProcess Communication) (DONE) (YES)
+6. Content in HTTP object (???) LAST
+7. CDN (DONE) (YES)
 8. HTTP version 1/2 (DONE)
 9. Types of headers in HTTP (DONE) 
 10. Process vs Thread vs Goroutines (DONE)
@@ -36,7 +37,7 @@ Cli Pay Later Assignment
 11. Difference between HTTP and HTTPS (DONE)
 12. How does TLS/SSL certificates work (DONE)
 13. Symmetric Asymmetric encryption / Hashing vs Encryption / Hashing (DONE)
-14. How does token refresh work ? 
+14. How does token refresh work ? (JWTs, Identity Tokens, Refresh Tokens, OAuth)
 15. Defer panic recover in go. (DONE)
 16. L1 & L2 cache 
 17. How Kafka messaging works ? 
@@ -47,7 +48,7 @@ Cli Pay Later Assignment
 
 1. Explain notification system 
 2. How you used channels to synchronise 
-3. Things to keep in mind while using channels 
+3. Things to keep in mind while using channels ?
 4. Different HTTP methods and usage 
 5. Error handling in Channel 
 6. Route forwarding 

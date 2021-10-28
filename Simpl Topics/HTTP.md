@@ -158,6 +158,9 @@ Headers can be grouped according to their contexts:
 
 2. **Introduces the concept of multiplexing** that interleaves the request and responses without head-of-line blocking and does so over **a single TCP connection**. 
 
+![http3](./http_multiplexing.png)
+
+
 3. HTTP2 is a **binary protocol** ie: only binay commands in form of **0s and 1s** are transmitted over the wire. 
 
     The binary framing layer divides the messages into frames that are segregated based on their type - **Data or Header**
