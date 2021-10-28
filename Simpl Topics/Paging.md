@@ -1,6 +1,6 @@
 ## Paging 
 
-In **Operating Systems**, **Paging** is a **storage mechanism** used to **retrieve processes** from the **secondary storage** into the main memory in form of **pages**. 
+In **Operating Systems**, **Paging** is a **storage mechanism** used to **retrieve processes** from the **secondary storage** into the **main memory** in form of **pages**. 
 
 
 The main idea behind the **paging** is to **divide each processs in form of pages**. 

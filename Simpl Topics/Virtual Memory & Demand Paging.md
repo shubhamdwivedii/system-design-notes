@@ -55,6 +55,8 @@ It can also be implemented in a segementation system. Demand segementation can a
 
 The process of **loading the page into memory on demmand (whenever page fault occurs)** is known as **demand paging**. 
 
+**Page Fault** is an **exception** that the memory management unit (**MMU**) raises when a **process accesses a memory page without proper preparations** (_Page not yet loaded into Frame (RAM)_). 
+
 A **demand paging system** is quite similar to a **paging system with swapping** where the **processes reside in secondary memory** and **pages are loaded only on demand, not in advance**.
 
 When a **contenxt switch** occurs, the operating system **does not copy** any of the **old program's pages out to the disk** or any of the **new program's pages into the main memory**. 
