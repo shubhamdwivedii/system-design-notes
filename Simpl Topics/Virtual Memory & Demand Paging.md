@@ -6,7 +6,11 @@ This process is done temporarily and is designed to work as a combination of RAM
 
 This means that **when RAM runs low, virtual memory can move data from it to a space called a paging file**. This process allows for RAM to be freed up so that a computer can complete the task.
 
+Virtual memory **frees up RAM** by **swapping data that has not been used _recently_ over to a storage device**, such as a hard drive or solid-state drive (SSD).
+
 Occasionally a user might be shown a message that says the virtual memory is running low, this means that either more RAM needs to be added, or the size of the paging file needs to be increased.
+
+If the OS has to **swap data between virtual memory and RAM too often**, the computer will begin to **slow down** -- this is called **_thrashing_**.
 
 **Virtual Memory is a storage allocation scheme in which secondary memory (HDD SSD) can be addressed as though it were part of the main memory (_RAM_)**
 
@@ -35,7 +39,7 @@ Situations, when entire program is not required to be loaded fully in main memor
 - Each user program could take less physical memory, more programs could be run the same time, with a corresponding increase in CPU utilization and throughput.
 
 
-### Modern microprocessors intended for general-purpose use, a memory management unit, or MMU, is built into the hardware.
+### Modern microprocessors intended for general-purpose use, a Memory Management Unit, or MMU, is built into the hardware.
 
 The **MMU's** job is to translate virtual addresses into physical addresses. 
 
