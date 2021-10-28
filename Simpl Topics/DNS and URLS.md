@@ -7,9 +7,9 @@ URL is the address of the website. It is a **reference** to a **resource** on th
 ![dns1](./dns_url.png)
 
 1. **The protocol**, also known as the scheme, is the first part of a URL. 
-It represents the sets of rules that decide how files are displayed, formatted, or transferred across the web. For example, when an address is entered in the browser, the http part , which stands for hypertext transfer protocol, tells it that the page is to be displayed in hypertext format (HTML). 
+    - It represents the **sets of rules that decide how files are displayed, formatted, or transferred across the web**. For example, when an address is entered in the browser, the **http** part , which stands for **hypertext transfer protocol**, tells it that the page is to be displayed in **hypertext format (HTML)**. 
 
-Other protocols include the file transfer protocol (ftp) for transferring files and single mail transfer protocol (SMTP) for used by mail servers to send emails. 
+    - Other protocols include the **file transfer protocol (ftp)** for transferring files and **single mail transfer protocol (SMTP)** for used by mail servers to send emails. 
 
 2. **The subdomain**, The most common subdomain is **‘www’** which a general symbol for any resource on the web. However, it is common to specify the type of resource that the browser should deliver. 
 
