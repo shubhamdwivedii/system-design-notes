@@ -21,7 +21,7 @@ Cli Pay Later Assignment
 
 **Comp Science Fundamendals:**
 
-1. What happens when we click on www.google.com (DONE) 
+1. What happens when we click on www.google.com (DONE) (YES)
 2. Virtual Memory (DONE) 
 3. Paging (related to Virtual Memory) (DONE)
 3. Page replacement policy. (DONE)
