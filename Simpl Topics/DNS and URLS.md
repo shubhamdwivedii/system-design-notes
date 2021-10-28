@@ -4,6 +4,23 @@
 
 URL is the address of the website. It is a **reference** to a **resource** on the internet, be it images, hypertext pages, audio/video files, etc. 
 
+![dns1](./dns_url.png)
+
+1. **The protocol**, also known as the scheme, is the first part of a URL. 
+It represents the sets of rules that decide how files are displayed, formatted, or transferred across the web. For example, when an address is entered in the browser, the http part , which stands for hypertext transfer protocol, tells it that the page is to be displayed in hypertext format (HTML). 
+
+Other protocols include the file transfer protocol (ftp) for transferring files and single mail transfer protocol (SMTP) for used by mail servers to send emails. 
+
+2. **The subdomain**, The most common subdomain is **‘www’** which a general symbol for any resource on the web. However, it is common to specify the type of resource that the browser should deliver. 
+
+3. **The top level domain (TLD)** is also known as the **domain extension**. It is the **‘com’** that appears at the end of simple websites addresses like bing.com. This part specifies what kind of content will be on the website. **‘.com’ was primarily used for commercial sites** (although today it’s used to indicate any website), whereas **‘.org’** is usually used to indicate that the website is that of an organization. 
+
+4. **The port** is a **reserved channel** used for specific purposes. Different types of servers will use different ports. Web server ports differ from file server ports, for instance. The default port for standard **HTTP servers is 80**, whereas secure websites use **HTTPS which requires port number 443**. (**SSH defaults to Port 22**)
+
+5. **The path** used to show which **directory** on server stores the resources (files, videos, audio, etc.) that are being requested. Nowadays, the path that appears in most URLs these days don’t forcibly reflect the directory structure on the server. Instead, **paths are used to identify a route in the navigational structure of the website**.
+
+### DNS
+
 **DNS** (**Domain Name System**) **maintains and maps** the name of the website, ie: **URL**, and particule **IP** (**Internet Protocol**) address it links to. 
 
 Every **URL** on the internet has a unique **IP** address which is **of the computer which hosts the server of the website requested**.
