@@ -19,6 +19,12 @@ URL is the address of the website. It is a **reference** to a **resource** on th
 
 5. **The path** used to show which **directory** on server stores the resources (files, videos, audio, etc.) that are being requested. Nowadays, the path that appears in most URLs these days don’t forcibly reflect the directory structure on the server. Instead, **paths are used to identify a route in the navigational structure of the website**.
 
+### IP Addresses 
+
+An **IP address** is a unique address that **identifies a device on the internet or a local network**. IP stands for **"Internet Protocol"**, which is the set of rules governing the format of data sent via the internet or local network.
+
+An IP address is a **string of numbers separated by periods**. IP addresses are expressed as a **set of four numbers** — an example address might be **192.158.1.38**. Each **number in the set can range from 0 to 255**. So, the full IP addressing range goes from 0.0.0.0 to 255.255.255.255.
+
 ### DNS
 
 **DNS** (**Domain Name System**) **maintains and maps** the name of the website, ie: **URL**, and particule **IP** (**Internet Protocol**) address it links to. 
