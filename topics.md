@@ -162,6 +162,7 @@ TOOLS:
     draw.io 
     excalidraw.com
     whimsical.com
+    dbdiagram.io
 
 
 package main
