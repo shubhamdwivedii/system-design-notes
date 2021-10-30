@@ -97,3 +97,5 @@ Why Join Simpl
 6. Every Possible Topic From Resume (Like JWTs, Refresh Token, OAuth)
 
 7. Insertion and Selection Sort 
+
+8. JWTs Refresh Token OAuth
