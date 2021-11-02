@@ -38,3 +38,26 @@ https://youtu.be/5ZjhNTM8XU8
 https://youtu.be/PTE4VJIdHPg
 
 
+### Package Oriented Design - William Kennedy 
+
+https://youtu.be/spKM5CyBwJA
+
+
+### How I Write HTTP Web Services after Eight Years - Mat Ryer
+
+https://youtu.be/rWBSMsLG8po
+
+
+### How To Structure Go Apps - Kat Zien 
+
+https://youtu.be/oL6JBUk6tj0
+
+
+### SOLID Go Design - Dave Cheney
+
+https://youtu.be/zzAdEt3xZ1M
+
+
+### Clear is better than clever - Dave Cheney 
+
+https://youtu.be/NwEuRO_w8HE
