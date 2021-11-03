@@ -1,6 +1,5 @@
 # Some Blog/Video Links 
 
-
 ### Behavior Of Channels 
 
 https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
@@ -30,7 +29,6 @@ https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1
 ### Transactions (ACID) - Marting Kleppmann 
 
 https://youtu.be/5ZjhNTM8XU8
-
 
 
 ### Best Practices in Go - Peter Bourgon
