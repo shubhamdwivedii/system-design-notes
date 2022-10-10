@@ -1,121 +1,40 @@
-Furthur topics 
+# Topics To Cover 
 
-Horizontal vs Vertical in More Detail + Tradeoffs. 
-
-DNS CDN Reverse Proxy in more detail.
-
-Load balancer layer 4 and layer 7 
-
-Rate Limiter 
-
-Remote Procedure Calls (in more detail RPC (gRPC))
-
-SaaS PaaS etc. 
-
-Object Store 
-
-SQL in general. indexing in SQL 
-
-What is RDBMS ?? What is relational data ? (what is indexing?)
-
-SQL vs NoSQL tradeoffs why and when to use which ?
-
-How denormalization is done (in practise)
-
-Caching algos eg. least recently used LRU
-
-cache invalidation.
-
-redundancy and availability (highly available?)
-
-Stateless Autoscaling
-
-WebSockets and Push Notifications
+## Main Topics 
+1. Golang 
+2. Problem Solving 
+3. Database Systems and Schema Design
+4. System Design 
+5. Low Level Design (API and Architecture)
+6. REST API and CRUD 
+7. Networking and OS fundamentals 
+8. Git, Docker and other Tools 
 
 
-// That interview topics 
 
-CAP Theorem
-caching 
-noSQL types 
-CDN  
-reverse proxy 
-what is hashing 
-hashing vs encryption 
-hashing algorithms 
-encryption algorithms 
-asymmetric vs symetric encryption 
-concurrency vs parallelism 
-deadlock 
-channels 
-buffered channels - what happens when overflow 
-mutex ?
-how to limit number of goroutines (max goroutines)
-rate limiter 1000 requests 
-is GO and OOP why ?
-Slices vs Array 
-String Builder - effiecient ways to append a string
-Why Golang ? Why go better than node python java etc. ??
-Golang Utils (go fmt, go test, go list, go build, go run etc)
-how throw error in Golang ?
-methods vs functions in Go 
-Golang types 
-What are pointers ? 
-What is Panic, what happens when Panic ?
-SOLID Principle 
-ACID Principle
+## 1. Golang - Language, Syntax and Internals 
 
-// DEEPAK TOPICS 
+1. Language Overview and Syntax 
+  - https://go.dev/tour/welcome/1
 
-reverse proxy 
-nginx 
-load balancer - layer 4, layer 7 
-DNS 
-Constitency - strong, weak, eventual 
-Availability - master - slave 
-http 2 vs 1 (https)
-SSL/TSL 
-Asymmetric encryption (private/public keys)
-Context (Go)
-Scheduling (in Go)
+2. Behavior Of Channels 
+  - https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
 
-book my show - per day traffic - max requests
+3. Scheduling In Go 
+  - https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html
 
-// Other Topics 
+4. Context In Go 
+  - https://www.sohamkamani.com/golang/context-cancellation-and-values/
 
-Object Store 
-RDBMS 
-SQL vs NoSQL 
-Reverse Proxy 
-SQL indexing 
-Hashing algos - MD5, Base62, Base64, SHA256
-DB Schema Design 
-Foreign Key 
-Shipping Service/Movie Database Design 
-SQL Unions etc. 
+5. Best Practices in Go - Peter Bourgon
+  - https://youtu.be/PTE4VJIdHPg
 
-// More interview topics 
+## 2. Problem Solving 
 
-How OAuth works 
-How JWT works and the benefits 
+1. Practise in Hackerrank (Easy questions upto 3-4 stars)
+2. Practise in LeetCode Top 100 Interview Questions (Easy Medium) (https://leetcode.com/problem-list/top-interview-questions/)
+3. Identify Common Patterns
+  - Two Pointers 
+  - Sliding Window 
+  - Dynamic Programming 
 
-process vs thread 
-
-SQL Indexes how work and b trees 
-
-stack vs heap ? why heap is slower. 
-
-HOW SSL works and Difference between SSL and TSL 
-
-WHen to use a Distributed database (what are some distributed databases (eg. Mongodb supports distributed))
-ACID in detail 
-What to do when two transactions happen simultaneously 
-Optimistic Lock vs Pessimistic Lock 
-Check-and-write 
-DIfference between INSERT UPSERT etc. 
-
-TOOLS: 
-    draw.io 
-    excalidraw.com
-    whimsical.com
-    dbdiagram.io
