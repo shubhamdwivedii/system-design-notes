@@ -38,3 +38,13 @@
   - Sliding Window 
   - Dynamic Programming 
 
+## 3. Database Systems 
+
+1. Study an SQL database (MySQL or PostGreSQL)
+2. Briefly study a NoSQL database (MongoDB)
+3. ACID Principles 
+  - https://youtu.be/5ZjhNTM8XU8 (Watch Upto (excluding) Distributed Consensus Protocol)
+4. How Indexing works (B-Tree) 
+5. Types of Keys 
+  - Primary, Secondary, Foreign, Composite 
+
