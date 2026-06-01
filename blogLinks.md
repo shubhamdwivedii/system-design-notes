@@ -1,5 +1,8 @@
 # Some Blog/Video Links 
 
+### Concurrencty in Go (Channels & WaitGroups)
+https://medium.com/goturkiye/concurrency-in-go-channels-and-waitgroups-25dd43064d1
+
 ### Behavior Of Channels 
 
 https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html
